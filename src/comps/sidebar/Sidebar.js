@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./sidebar.css";
-import profile from "../../assets/contactMe.png";
+import profile from "../../assets/contactMe.jpg";
 
 function Sidebar() {
   const [age, setAge] = useState(0);
