@@ -81,7 +81,7 @@ const projectData = [
         type: "Websites"
     },
     {
-        img: "https://oktayshakirov.com/assets/images/projects/portfolio.png",
+        img: "https://oktayshakirov.com/assets/images/projects/berlinew.jpg",
         title: "BerliNEW Android App",
         category: "Application",
         tech: "Wordpress | Android SDK",

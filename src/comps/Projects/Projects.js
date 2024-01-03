@@ -67,8 +67,8 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
-                      pointerEvents: (project.previwLink === "https://") ? "none" : "auto",
-                      opacity: (project.previwLink === "https://") ? "0.6" : "1"
+                      pointerEvents: (project.githubLink === "https://") ? "none" : "auto",
+                      opacity: (project.githubLink === "https://") ? "0.6" : "1"
                     }}
                   >
                     <ion-icon name="logo-github"></ion-icon>
