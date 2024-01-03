@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./sidebar.css";
-import profile from "../../assets/contactMe.jpg";
+import profile from "../../assets/contactMe.png";
 
 function Sidebar() {
   const [age, setAge] = useState(0);
@@ -39,7 +39,7 @@ function Sidebar() {
         </svg>
       ),
       heading: "LOCATION",
-      desc: "Kolkata, West Bengal",
+      desc: "Firozabad, Uttar Pradesh",
     },
     {
       icon: (
@@ -63,7 +63,7 @@ function Sidebar() {
   //todo ----- set age -----
   useEffect(() => {
     let ageTimer = null;
-    if (age < 23) {
+    if (age < 25) {
       ageTimer = setInterval(() => {
         setAge((val) => val + 1);
       }, 50);
@@ -95,7 +95,7 @@ function Sidebar() {
     <aside>
       <section className="name_info">
         <img src={profile} alt="error" />
-        <h2>Trisha Das</h2>
+        <h2>Mayank Gupta</h2>
         <p className="helloWorld">{text[index]}</p>
       </section>
       <section className="personal_info">
