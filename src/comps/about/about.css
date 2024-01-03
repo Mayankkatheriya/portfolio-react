@@ -1,0 +1,146 @@
+.App{
+    display: flex;
+    gap: 50px;
+    align-items:flex-start;
+    justify-content: center;
+    color: white;
+    position: relative;
+    flex-wrap: wrap;
+}
+main{
+   border: 1px solid black; 
+   width: 70%;
+   padding: 1.5rem;
+   position: relative;
+   border-radius: 20px;
+   background-color: rgba(33, 134, 160, 0.719);
+}
+/* -------------------- primary focus ------------------- */
+.primary_focus_cards, .activity{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.primary_focus_card{
+    padding: 2rem;
+    display: flex;
+    gap: 30px;
+    align-items:flex-start;
+    justify-content: center;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px inset rgb(34,115,144);
+    background: -webkit-linear-gradient(135deg, rgb(34,97,117) 0%, rgba(44, 82, 93, 1) 100%);
+}
+.primary_focus_card .content h4{
+    margin-bottom: 0.5rem;
+}
+.primary_focus_card .content p{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.623);
+}
+.primary_focus h2, .activities h2{
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.849);
+}
+/* -------------------- activity ------------------- */
+.activity{
+    margin: 2rem 0;
+}
+.activity_card{
+    padding: 2rem;
+    width: 400px;
+    position: relative;
+    box-shadow: 0 0 5px inset rgba(34,115,144,0.7);
+    border-radius: 15px;
+    background: -webkit-linear-gradient(135deg, rgba(34,97,117,0.7) 0%, rgba(44, 82, 93, 0.7) 100%);
+}
+.activity_card img{
+    position: absolute;
+    top: -1.5rem;
+    height: 80px;
+    width: 80px;
+}
+.activity_card p{
+    font-size: 12px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.87);
+}
+.activity_card h4{
+    margin-bottom: 10px;
+    margin-left: 90px
+}
+/* -------------------- text ------------------- */
+.para_container {
+    color: #d6d6d6;
+    line-height:24px;
+    text-align:start;
+    background: -webkit-linear-gradient(135deg, rgba(34,97,117,0.7) 0%, rgba(44, 82, 93, 0.7) 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.para_container .para{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size:15px;
+    line-height: 1.6;
+}
+.para_container button{
+    font-size:15px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: white;   
+    animation: float 4s ease-in-out infinite;
+    cursor: pointer;
+}
+
+@keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(10px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+/* -------------------- skill ------------------- */
+  .Skills .image_container{
+    white-space: nowrap;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 4rem 0;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-padding-inline: 25px;
+    background: -webkit-linear-gradient(135deg, rgba(34,97,117,0.7) 0%, rgba(44, 82, 93, 0.7) 100%);
+    border-radius: 15px;
+    margin-bottom: 2rem;
+  }
+  .Skills .image_container img{
+    transition: 0.25s ease;
+    cursor: pointer;
+    width: 150px;
+  }
+  .Skills .image_container img:hover{
+    filter: drop-shadow(10px 10px 30px hsl(45, 100%, 71%));
+  }
+  .Skills h2{
+    text-align: center;
+    color: #ebe8e8;
+    margin-bottom: 1.3rem;
+  }
